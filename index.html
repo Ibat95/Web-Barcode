@@ -4,19 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web PLU to Barcode</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <style>
         body {
             font-family: Arial, sans-serif;
             text-align: center;
-            background-color: #f4f4f4;
+            background: linear-gradient(135deg, #007bff, #00c6ff);
+            color: white;
             padding: 20px;
         }
         h1 {
-            color: #333;
+            color: #fff;
         }
         .logo {
-            width: 200px;
+            width: 150px;
             margin-bottom: 20px;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            display: inline-block;
+            max-width: 400px;
+            width: 100%;
+            color: #333;
         }
         .barcode-btn {
             display: inline-block;
@@ -28,19 +40,30 @@
             border-radius: 5px;
             margin-top: 20px;
             box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s ease, background-color 0.3s ease;
         }
         .barcode-btn:hover {
             background-color: #0056b3;
+            transform: scale(1.05);
+        }
+        footer {
+            margin-top: 20px;
+            font-size: 14px;
+            opacity: 0.8;
         }
     </style>
 </head>
 <body>
-    <!-- Logo -->
     <img src="Picsart_25-01-24_19-51-28-393.jpg" alt="QR Member PoinKu" class="logo">
-
-    <h1>Selamat Datang di Web PLU to Barcode</h1>
-    <p>Silakan klik tombol di bawah untuk mengakses Web PLU to Barcode:</p>
-
-    <a href="barcode.html" class="barcode-btn">Akses Web PLU to Barcode</a>
+    
+    <div class="container">
+        <h1>Selamat Datang di Web PLU to Barcode</h1>
+        <p>Silakan klik tombol di bawah untuk mengakses Web PLU to Barcode:</p>
+        <a href="barcode.html" class="barcode-btn">
+            <i class="fas fa-barcode"></i> Akses Web PLU to Barcode
+        </a>
+    </div>
+    
+    <footer>&copy; 2025 ID Store 07 | All Rights Reserved</footer>
 </body>
 </html>
